@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.builder.YearDomainBuilder"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.YearDomain"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.builder.PersonDomainBuilder"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.PersonDomain"/>
+</qualifiedTypeNameHistroy>
