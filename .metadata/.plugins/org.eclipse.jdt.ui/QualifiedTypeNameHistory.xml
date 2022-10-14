@@ -4,4 +4,5 @@
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.YearDomain"/>
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.builder.PersonDomainBuilder"/>
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.PersonDomain"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.BudgetDomain"/>
 </qualifiedTypeNameHistroy>

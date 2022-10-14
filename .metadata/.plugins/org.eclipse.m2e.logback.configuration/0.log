@@ -1206,3 +1206,516 @@
 2022-10-06 21:39:27,422 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
 2022-10-06 21:39:27,424 [Worker-68: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-10-06 21:39:27,424 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 16:32:11,102 [main] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't read workspace state
+java.io.InvalidClassException: org.eclipse.m2e.core.embedder.ArtifactKey; local class incompatible: stream classdesc serialVersionUID = 0, local class serialVersionUID = -8984509272834024387
+	at java.base/java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:728)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2062)
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1909)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2235)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1744)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:514)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:472)
+	at java.base/java.util.HashMap.readObject(HashMap.java:1550)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1231)
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2434)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2268)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1744)
+	at java.base/java.io.ObjectInputStream$FieldValues.<init>(ObjectInputStream.java:2617)
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2468)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2268)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1744)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:514)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:472)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.readWorkspaceState(ProjectRegistryReader.java:67)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.<init>(ProjectRegistryManager.java:173)
+	at org.eclipse.m2e.core.internal.MavenPluginActivator.start(MavenPluginActivator.java:218)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:813)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:805)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:762)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3578)
+	at java.base/java.lang.Class.getConstructor(Class.java:2271)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:796)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:748)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:488)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3830)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3806)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3126)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2093)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3783)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3240)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3404)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2489)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:607)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.internalGetParent(PackageExplorerContentProvider.java:381)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.processDelta(PackageExplorerContentProvider.java:734)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.handleAffectedChildren(PackageExplorerContentProvider.java:815)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.processDelta(PackageExplorerContentProvider.java:758)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.handleAffectedChildren(PackageExplorerContentProvider.java:815)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.processDelta(PackageExplorerContentProvider.java:758)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.elementChanged(PackageExplorerContentProvider.java:139)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1755)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1743)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1576)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1552)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:781)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.becomeWorkingCopy(CompilationUnit.java:98)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFileInfo(CompilationUnitDocumentProvider.java:1039)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:481)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.connect(CompilationUnitDocumentProvider.java:1284)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4171)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:262)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1479)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.internalDoSetInput(JavaEditor.java:2554)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.doSetInput(JavaEditor.java:2527)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSetInput(CompilationUnitEditor.java:1411)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3161)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2290)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3178)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3203)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:344)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:995)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:960)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:403)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:330)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1209)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:116)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:116)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1083)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+2022-10-13 16:32:19,146 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-10-13 16:32:34,400 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\pom.xml.
+2022-10-13 16:32:34,583 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:34,673 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\pom.xml.
+2022-10-13 16:32:34,676 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:34,760 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\pom.xml.
+2022-10-13 16:32:34,762 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:34,911 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\pom.xml.
+2022-10-13 16:32:36,570 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetAPI:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAPI\pom.xml.
+2022-10-13 16:32:37,512 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:37,519 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetAplication: com.mipresupuesto.personalbudget:PersonalBudgetAplication:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetAplication/target/classes
+2022-10-13 16:32:37,520 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDomain: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDomain/target/classes
+2022-10-13 16:32:37,520 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetIfrastructure: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetIfrastructure/target/classes
+2022-10-13 16:32:37,520 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 16:32:37,520 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDTO: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDTO/target/classes
+2022-10-13 16:32:37,794 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:37,795 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\src\main\resources
+2022-10-13 16:32:37,798 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:37,799 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\src\test\resources
+2022-10-13 16:32:38,066 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\pom.xml.
+2022-10-13 16:32:38,069 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:38,365 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:38,367 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\src\main\resources
+2022-10-13 16:32:38,370 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:38,371 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\src\test\resources
+2022-10-13 16:32:38,648 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\pom.xml.
+2022-10-13 16:32:38,652 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:39,025 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:39,026 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
+2022-10-13 16:32:39,029 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:39,030 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 16:32:39,141 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\pom.xml.
+2022-10-13 16:32:39,144 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:39,341 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:39,342 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\src\main\resources
+2022-10-13 16:32:39,344 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:39,346 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\src\test\resources
+2022-10-13 16:32:39,492 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetIfrastructure\pom.xml.
+2022-10-13 16:32:39,497 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:39,497 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 16:32:40,304 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:40,304 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetIfrastructure\src\main\resources
+2022-10-13 16:32:40,306 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:40,307 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetIfrastructure\src\test\resources
+2022-10-13 16:32:40,473 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetAplication:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAplication\pom.xml.
+2022-10-13 16:32:40,480 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDomain: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDomain/target/classes
+2022-10-13 16:32:40,480 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetIfrastructure: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetIfrastructure/target/classes
+2022-10-13 16:32:40,480 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:40,480 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDTO: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDTO/target/classes
+2022-10-13 16:32:40,480 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 16:32:40,678 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:40,679 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAplication\src\main\resources
+2022-10-13 16:32:40,681 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:40,682 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAplication\src\test\resources
+2022-10-13 16:32:41,124 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetAPI:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAPI\pom.xml.
+2022-10-13 16:32:41,292 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:41,300 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetAplication: com.mipresupuesto.personalbudget:PersonalBudgetAplication:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetAplication/target/classes
+2022-10-13 16:32:41,301 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDomain: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDomain/target/classes
+2022-10-13 16:32:41,301 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetIfrastructure: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetIfrastructure/target/classes
+2022-10-13 16:32:41,301 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 16:32:41,301 [Worker-6: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDTO: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDTO/target/classes
+2022-10-13 16:32:45,427 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-10-13 16:32:45,428 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-10-13 16:32:45,434 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-10-13 16:32:45,461 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-13 16:32:45,682 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-10-13 16:32:45,682 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-10-13 16:32:45,682 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAPI\src\test\resources
+2022-10-13 16:32:45,683 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\pom.xml.
+2022-10-13 16:32:45,687 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:45,732 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\pom.xml.
+2022-10-13 16:32:45,735 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:45,795 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\pom.xml.
+2022-10-13 16:32:45,797 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:45,971 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetAPI:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAPI\pom.xml.
+2022-10-13 16:32:46,137 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:46,143 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetAplication: com.mipresupuesto.personalbudget:PersonalBudgetAplication:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetAplication/target/classes
+2022-10-13 16:32:46,143 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDomain: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDomain/target/classes
+2022-10-13 16:32:46,143 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetIfrastructure: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetIfrastructure/target/classes
+2022-10-13 16:32:46,144 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 16:32:46,144 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDTO: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDTO/target/classes
+2022-10-13 16:32:46,186 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetIfrastructure\pom.xml.
+2022-10-13 16:32:46,188 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:46,189 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 16:32:46,228 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetAplication:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAplication\pom.xml.
+2022-10-13 16:32:46,230 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDomain: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDomain/target/classes
+2022-10-13 16:32:46,231 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetIfrastructure: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetIfrastructure/target/classes
+2022-10-13 16:32:46,231 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:46,231 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDTO: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDTO/target/classes
+2022-10-13 16:32:46,231 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 16:32:46,314 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\pom.xml.
+2022-10-13 16:32:50,341 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:50,342 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\src\main\resources
+2022-10-13 16:32:50,344 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:50,345 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\src\test\resources
+2022-10-13 16:32:50,359 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:50,361 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:50,362 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\src\main\resources
+2022-10-13 16:32:50,364 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:50,365 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\src\test\resources
+2022-10-13 16:32:50,399 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:50,402 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:50,403 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
+2022-10-13 16:32:50,405 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:50,406 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 16:32:50,423 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:50,425 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:50,426 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\src\main\resources
+2022-10-13 16:32:50,427 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:50,428 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\src\test\resources
+2022-10-13 16:32:50,446 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:50,446 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 16:32:50,448 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:50,449 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetIfrastructure\src\main\resources
+2022-10-13 16:32:50,450 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:50,452 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetIfrastructure\src\test\resources
+2022-10-13 16:32:50,478 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDomain: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDomain/target/classes
+2022-10-13 16:32:50,478 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetIfrastructure: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetIfrastructure/target/classes
+2022-10-13 16:32:50,478 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:50,478 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDTO: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDTO/target/classes
+2022-10-13 16:32:50,478 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 16:32:50,480 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:50,481 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAplication\src\main\resources
+2022-10-13 16:32:50,483 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:32:50,485 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAplication\src\test\resources
+2022-10-13 16:32:50,788 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 16:32:50,794 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetAplication: com.mipresupuesto.personalbudget:PersonalBudgetAplication:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetAplication/target/classes
+2022-10-13 16:32:50,794 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDomain: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDomain/target/classes
+2022-10-13 16:32:50,794 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetIfrastructure: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetIfrastructure/target/classes
+2022-10-13 16:32:50,795 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 16:32:50,795 [Worker-16: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDTO: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDTO/target/classes
+2022-10-13 16:32:50,798 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-10-13 16:32:50,798 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-10-13 16:32:50,799 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-13 16:32:50,800 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-13 16:32:50,803 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-10-13 16:32:50,803 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-10-13 16:32:50,803 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAPI\src\test\resources
+2022-10-13 16:43:01,464 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:43:01,465 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
+2022-10-13 16:43:01,467 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:43:01,468 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 16:45:43,114 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:45:43,115 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
+2022-10-13 16:45:43,118 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 16:45:43,118 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 16:50:23,955 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-10-13 17:11:41,950 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-10-13 17:11:44,612 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\pom.xml.
+2022-10-13 17:11:46,729 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:46,731 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\src\main\resources
+2022-10-13 17:11:46,738 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:46,739 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\src\test\resources
+2022-10-13 17:11:47,388 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:47,499 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\src\main\resources
+2022-10-13 17:11:47,533 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:47,535 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\src\test\resources
+2022-10-13 17:11:48,664 [Worker-4: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\pom.xml.
+2022-10-13 17:11:48,673 [Worker-4: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:11:49,541 [Worker-10: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\pom.xml.
+2022-10-13 17:11:49,545 [Worker-10: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:11:49,961 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:49,962 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\src\main\resources
+2022-10-13 17:11:49,965 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:49,966 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\src\test\resources
+2022-10-13 17:11:50,704 [Worker-10: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\pom.xml.
+2022-10-13 17:11:50,708 [Worker-10: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:11:50,829 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:50,844 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
+2022-10-13 17:11:50,863 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:50,865 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 17:11:51,342 [Worker-9: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\pom.xml.
+2022-10-13 17:11:51,345 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:11:51,373 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:51,375 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\src\main\resources
+2022-10-13 17:11:51,378 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:51,379 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\src\test\resources
+2022-10-13 17:11:51,713 [Worker-9: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetIfrastructure\pom.xml.
+2022-10-13 17:11:51,717 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:11:51,718 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 17:11:51,781 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:51,782 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetIfrastructure\src\main\resources
+2022-10-13 17:11:51,788 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:51,790 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetIfrastructure\src\test\resources
+2022-10-13 17:11:52,663 [Worker-9: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetAplication:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAplication\pom.xml.
+2022-10-13 17:11:52,684 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDomain: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDomain/target/classes
+2022-10-13 17:11:52,684 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetIfrastructure: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetIfrastructure/target/classes
+2022-10-13 17:11:52,684 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:11:52,685 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDTO: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDTO/target/classes
+2022-10-13 17:11:52,685 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 17:11:52,743 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:52,743 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAplication\src\main\resources
+2022-10-13 17:11:52,747 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:11:52,761 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAplication\src\test\resources
+2022-10-13 17:11:56,185 [Worker-9: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetAPI:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAPI\pom.xml.
+2022-10-13 17:11:56,423 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:11:56,433 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetAplication: com.mipresupuesto.personalbudget:PersonalBudgetAplication:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetAplication/target/classes
+2022-10-13 17:11:56,434 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDomain: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDomain/target/classes
+2022-10-13 17:11:56,434 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetIfrastructure: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetIfrastructure/target/classes
+2022-10-13 17:11:56,434 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 17:11:56,434 [Worker-9: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDTO: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDTO/target/classes
+2022-10-13 17:12:07,377 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-10-13 17:12:07,378 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-10-13 17:12:07,387 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-10-13 17:12:07,457 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-13 17:12:07,462 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-10-13 17:12:07,463 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-10-13 17:12:07,463 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAPI\src\test\resources
+2022-10-13 17:12:08,736 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\pom.xml.
+2022-10-13 17:12:08,740 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:12:09,198 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\pom.xml.
+2022-10-13 17:12:09,200 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:12:09,578 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\pom.xml.
+2022-10-13 17:12:09,581 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:12:10,044 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetAPI:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAPI\pom.xml.
+2022-10-13 17:12:10,217 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:12:10,227 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetAplication: com.mipresupuesto.personalbudget:PersonalBudgetAplication:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetAplication/target/classes
+2022-10-13 17:12:10,228 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDomain: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDomain/target/classes
+2022-10-13 17:12:10,228 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetIfrastructure: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetIfrastructure/target/classes
+2022-10-13 17:12:10,228 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 17:12:10,229 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDTO: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDTO/target/classes
+2022-10-13 17:12:10,371 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetIfrastructure\pom.xml.
+2022-10-13 17:12:10,373 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:12:10,374 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 17:12:10,639 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetAplication:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAplication\pom.xml.
+2022-10-13 17:12:10,641 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDomain: com.mipresupuesto.personalbudget:PersonalBudgetDomain:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDomain/target/classes
+2022-10-13 17:12:10,641 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetIfrastructure: com.mipresupuesto.personalbudget:PersonalBudgetIfrastructure:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetIfrastructure/target/classes
+2022-10-13 17:12:10,641 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetCrossCutting: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetCrossCutting/target/classes
+2022-10-13 17:12:10,641 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetDTO: com.mipresupuesto.personalbudget:PersonalBudgetDTO:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetDTO/target/classes
+2022-10-13 17:12:10,641 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PersonalBudgetEntity: com.mipresupuesto.personalbudget:PersonalBudgetEntity:0.0.1-SNAPSHOT with classifier  to /PersonalBudgetEntity/target/classes
+2022-10-13 17:12:10,758 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mipresupuesto.personalbudget:PersonalBudgetCrossCutting:0.0.1-SNAPSHOT @ D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\pom.xml.
+2022-10-13 17:12:11,742 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:11,744 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\src\main\resources
+2022-10-13 17:12:11,748 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:11,749 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetCrossCutting\src\test\resources
+2022-10-13 17:12:11,951 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:11,952 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\src\main\resources
+2022-10-13 17:12:11,956 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:11,957 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDTO\src\test\resources
+2022-10-13 17:12:11,968 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:11,970 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
+2022-10-13 17:12:11,973 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:11,974 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 17:12:11,986 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:11,987 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\src\main\resources
+2022-10-13 17:12:11,991 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:11,992 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetEntity\src\test\resources
+2022-10-13 17:12:12,018 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:12,020 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetIfrastructure\src\main\resources
+2022-10-13 17:12:12,024 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:12,025 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetIfrastructure\src\test\resources
+2022-10-13 17:12:12,038 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:12,040 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAplication\src\main\resources
+2022-10-13 17:12:12,042 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:12,043 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAplication\src\test\resources
+2022-10-13 17:12:12,341 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-10-13 17:12:12,341 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-10-13 17:12:12,345 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-13 17:12:12,346 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-13 17:12:12,351 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-10-13 17:12:12,351 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-10-13 17:12:12,351 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetAPI\src\test\resources
+2022-10-13 17:12:13,761 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:13,762 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
+2022-10-13 17:12:13,765 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:12:13,766 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 17:14:31,776 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:14:31,777 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
+2022-10-13 17:14:31,782 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:14:31,784 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 17:19:53,645 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:19:53,646 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
+2022-10-13 17:19:53,649 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:19:53,650 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 17:21:09,032 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:21:09,035 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
+2022-10-13 17:21:09,039 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:21:09,041 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 17:26:26,512 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:26:26,513 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
+2022-10-13 17:26:26,515 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:26:26,516 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 17:30:11,284 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:30:11,285 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\main\resources
+2022-10-13 17:30:11,288 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:30:11,289 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UCO\Software 2\Proyecto de clase\PersonalBudgetDomain\src\test\resources
+2022-10-13 17:32:32,832 [Worker-13: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.crosscuting:CrossCutting:0.0.1-SNAPSHOT @ C:\Users\jmora\eclipse-workspace\CrossCuting1\pom.xml.
+2022-10-13 17:32:33,508 [Worker-13: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CrossCutting/src
+2022-10-13 17:32:33,509 [Worker-13: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CrossCutting/Test
+2022-10-13 17:32:33,593 [Worker-13: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2022-10-13 17:32:35,221 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:32:35,222 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jmora\eclipse-workspace\CrossCuting1\src\main\resources
+2022-10-13 17:32:35,225 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-13 17:32:35,226 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jmora\eclipse-workspace\CrossCuting1\src\test\resources
