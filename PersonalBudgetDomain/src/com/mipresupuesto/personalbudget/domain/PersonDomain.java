@@ -8,6 +8,10 @@ public class PersonDomain {
 	private String firstName;
 	private String middleName;
 	private String lastName;
+	private String firstSurname;
+	private String secondSurname;
+	private String name;
+	private String completeName;
 	
 	private PersonDomain(UUID id,String idCard,String firstName,String middleName,String lastName) {
 		this.id=id;
@@ -40,6 +44,19 @@ public class PersonDomain {
 	public final String getLastName() {
 		return lastName;
 	}
+	public final String getFirstSurname() {
+		return firstSurname;
+	}
+	public final String getSecondSurname() {
+		return secondSurname;
+	}
+	public final String getName() {
+		return name;
+	}
+	public final String getCompleteName() {
+		return completeName;
+	}
+	
 	
 	
 }

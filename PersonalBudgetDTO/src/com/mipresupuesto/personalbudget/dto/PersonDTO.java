@@ -1,7 +1,11 @@
 package com.mipresupuesto.personalbudget.dto;
 
+import java.util.UUID;
+
+import com.mipresupuesto.personalbudget.crosscutting.utils.UtilUUID;
+
 public final class PersonDTO {
-	private String id;
+	private UUID id;
 	private String idCard;
 	private String firstName;
 	private String middleName;
@@ -12,7 +16,7 @@ public final class PersonDTO {
 	private String completeName;
 
 	public PersonDTO() {
-		setId("");
+		setId(UtilUUID.DEFAUL_UUID);
 		setFirstName("");
 		setIdCard("");
 		setMiddleName("");
@@ -20,11 +24,12 @@ public final class PersonDTO {
 		setSecondSurname("");
 		setName("");
 		setLastName("");
+		setCompleteName("");
 		
 	}
 
-	public PersonDTO(String id, String idCard, String firstName, String middleName, 
-			String fisrstSurname, String secondSurname, String name, String lastName) {
+	public PersonDTO(UUID id, String idCard, String firstName, String middleName, 
+			String fisrstSurname, String secondSurname, String name, String lastName, String completeName) {
 		setId(id);
 		setFirstName(firstName);
 		setIdCard(idCard);
@@ -33,17 +38,23 @@ public final class PersonDTO {
 		setSecondSurname(secondSurname);
 		setName(name);
 		setLastName(lastName);
+		setCompleteName(completeName);
 	}
 	
 	public static final PersonDTO create() {
 		return new PersonDTO();
 	}
 	
-	public final String getId() {
+	
+	
+	public final UUID getId() {
+		if(id == null) {
+			setId(UtilUUID.DEFAUL_UUID);
+		}
 		return id;
 	}
 
-	public final void setId(String id) {
+	public final void setId(UUID id) {
 		this.id = id;
 	}
 
@@ -112,5 +123,5 @@ public final class PersonDTO {
 	public final String getCompleteName() {
 		return getName()+ " "+getLastName();
 	}
-
+	
 }

@@ -27,6 +27,25 @@ public final class UtilUUID {
 		
 		return uuid;
 	}
-	
+	public static final UUID geStUUIDFromString(final String uuidString) {
+		UUID uuid = DEFAUL_UUID;
+		if(uuidString == null && "".equals(uuidString.trim())) {
+			try {
+				uuid = UUID.fromString(uuidString);
+			}catch (IllegalArgumentException  exception) {
+				// TODO: falta hacer la gestion de excepcion
+			}
+			
+		}
+		return uuid;
+	}
+	public static final String getStringFromUUID(final UUID uuid) {
+		String uuidString = DEFAUL_UUID_STRING;
+		
+		if(uuid != null) {
+			uuidString = uuid.toString();
+		}
+		return uuidString;
+	}
 	
 }
