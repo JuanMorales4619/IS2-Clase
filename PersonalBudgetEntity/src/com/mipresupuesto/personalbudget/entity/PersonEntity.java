@@ -28,7 +28,7 @@ public final class PersonEntity {
 	}
 
 	public PersonEntity(UUID id, String idCard, String firstName, String middleName, 
-			String fisrstSurname, String secondSurname, String name, String lastName) {
+			String fisrstSurname, String secondSurname, String name, String lastName, String completeName) {
 		setId(id);
 		setFirstName(firstName);
 		setIdCard(idCard);
@@ -37,6 +37,7 @@ public final class PersonEntity {
 		setSecondSurname(secondSurname);
 		setName(name);
 		setLastName(lastName);
+		setCompleteName(completeName);
 	}
 	
 	public static final PersonEntity create() {
