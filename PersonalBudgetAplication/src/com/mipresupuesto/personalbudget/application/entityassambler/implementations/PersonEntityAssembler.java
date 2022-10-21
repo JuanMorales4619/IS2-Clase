@@ -1,11 +1,14 @@
 package com.mipresupuesto.personalbudget.application.entityassambler.implementations;
 
+import org.springframework.stereotype.Component;
+
 import com.mipresupuesto.personalbudget.application.entityassambler.EntityAssambler;
 import com.mipresupuesto.personalbudget.crosscutting.util.object.UtilObject;
 import com.mipresupuesto.personalbudget.domain.PersonDomain;
 import com.mipresupuesto.personalbudget.domain.builder.PersonDomainBuilder;
 import com.mipresupuesto.personalbudget.entity.PersonEntity;
 
+@Component
 public class PersonEntityAssembler implements EntityAssambler<PersonEntity, PersonDomain> {
 
 	@Override

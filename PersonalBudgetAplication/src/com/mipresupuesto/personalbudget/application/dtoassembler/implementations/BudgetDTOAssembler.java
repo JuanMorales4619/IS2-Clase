@@ -1,10 +1,14 @@
 package com.mipresupuesto.personalbudget.application.dtoassembler.implementations;
 
+import org.springframework.stereotype.Component;
+
 import com.mipresupuesto.personalbudget.application.dtoassembler.DTOAssembler;
 import com.mipresupuesto.personalbudget.domain.BudgetDomain;
 import com.mipresupuesto.personalbudget.domain.builder.BudgetDomainBuilder;
 import com.mipresupuesto.personalbudget.dto.BudgetDTO;
 
+
+@Component
 public class BudgetDTOAssembler implements DTOAssembler<BudgetDTO, BudgetDomain>{
 
 	@Override

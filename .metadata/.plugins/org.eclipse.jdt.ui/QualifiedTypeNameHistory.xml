@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.entity.YearEntity"/>
-    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.entity.PersonEntity"/>
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.application.dtoassembler.implementations.YearDTOAssembler"/>
-    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.YearDomain"/>
     <fullyQualifiedTypeName name="java.lang.foreign.VaList.Builder"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="java.util.UUID"/>
@@ -18,4 +15,8 @@
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.application.dtoassembler.implementations.BudgetDTOAssembler"/>
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.builder.BudgetDomainBuilder"/>
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.BudgetDomain"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.application.entityassambler.EntityAssambler"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.YearDomain"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.entity.YearEntity"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.entity.PersonEntity"/>
 </qualifiedTypeNameHistroy>
