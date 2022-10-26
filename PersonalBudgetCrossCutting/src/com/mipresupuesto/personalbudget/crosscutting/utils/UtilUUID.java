@@ -2,6 +2,8 @@ package com.mipresupuesto.personalbudget.crosscutting.utils;
 
 import java.util.UUID;
 
+import com.mipresupuesto.personalbudget.crosscutting.util.object.UtilObject;
+
 public final class UtilUUID {
 	public static final String DEFAUL_UUID_STRING = "00000000-0000-0000-0000-000000000000";
 	public static final UUID DEFAUL_UUID = UUID.fromString(DEFAUL_UUID_STRING);
@@ -48,4 +50,10 @@ public final class UtilUUID {
 		return uuidString;
 	}
 	
+	private static UUID getDefault(UUID value, UUID defaulValue) {
+		return UtilObject.getUtilObject().getDefault(value, defaulValue);
+	}
+	public static UUID getDefault(UUID value) {
+		return getDefault(value, DEFAUL_UUID);
+	}
 }

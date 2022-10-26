@@ -26,5 +26,6 @@ public final class YearDomain {
 	private final void setYear(final int year) {
 		this.year = year;
 	}
+	
 
 }
