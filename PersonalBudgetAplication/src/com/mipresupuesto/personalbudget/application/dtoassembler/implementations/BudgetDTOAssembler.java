@@ -17,7 +17,10 @@ public class BudgetDTOAssembler implements DTOAssembler<BudgetDTO, BudgetDomain>
 		
 		if(dto != null) {
 			domain = BudgetDomainBuilder.get()
-											.setId(dto.getId()).build();
+											.setId(dto.getId())
+											/*.setYear(dto.getYear())
+											.setPerson(dto.getPerson())*/
+											.build();
 		}
 		return domain;
 	}
@@ -27,7 +30,7 @@ public class BudgetDTOAssembler implements DTOAssembler<BudgetDTO, BudgetDomain>
 		BudgetDTO dto = new BudgetDTO();
 		
 		if(domain != null) {
-			dto = new BudgetDTO();
+			dto = new BudgetDTO(/*domain.getPerson(),domain.getYear()*/);
 			
 		}
 		return dto;

@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "Person")
+@Table(name = "Budget")
 public final class BudgetEntity {
 	
 	@Id
