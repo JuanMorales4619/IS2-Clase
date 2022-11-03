@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.mipresupuesto.personalbudget.application.entityassambler.EntityAssambler;
 import com.mipresupuesto.personalbudget.application.service.interfaces.CreateBudgetUseCase;
+import com.mipresupuesto.personalbudget.crosscutting.exception.personalbudgetexception.PersonalBudgetException;
 import com.mipresupuesto.personalbudget.domain.BudgetDomain;
 import com.mipresupuesto.personalbudget.entity.BudgetEntity;
 import com.mipresupuesto.personalbudget.infrastructure.data.interfaces.BudgetRepository;
@@ -23,8 +24,15 @@ public class CreateBudgetUseCaseImpl implements CreateBudgetUseCase {
 
 	@Override
 	public void execute(final BudgetDomain budget) {
-		budgetRepository.save(entityAssembler.assemblerDomain(budget));
-
+		try {
+			budgetRepository.save(entityAssembler.assemblerDomain(budget));
+		}	
+		catch(PersonalBudgetException exception) {
+			throw exception;
+		}catch (Exception exception) {
+			throw PersonalBudgetException.buildTBusinessLogicExeption(
+					"There was a problen trying to validate the budget data integrity");
+		}
 	}
 
 }

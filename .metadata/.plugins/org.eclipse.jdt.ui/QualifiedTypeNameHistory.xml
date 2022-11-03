@@ -41,7 +41,6 @@
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.crosscutting.util.object.UtilObject"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.application.entityassambler.EntityAssambler"/>
-    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.BudgetDomain"/>
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.entity.BudgetEntity"/>
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.builder.BudgetDomainBuilder"/>
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.crosscutting.exception.GeneralException"/>
@@ -49,5 +48,10 @@
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.crosscutting.exception.enumeration.ExceptionLocation"/>
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.crosscutting.utils.UtilUUID"/>
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.crosscutting.util.text.UtilText"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.specification.Specification"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.domain.BudgetDomain"/>
     <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.crosscutting.exception.personalbudgetexception.PersonalBudgetException"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.specification.specification"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.specification.implementation.SpecificationImpl"/>
+    <fullyQualifiedTypeName name="com.mipresupuesto.personalbudget.specification.Specification"/>
 </qualifiedTypeNameHistroy>
